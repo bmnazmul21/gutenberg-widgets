@@ -1,9 +1,5 @@
 <?php
-$query = new WP_Query(array(
-    'post_type' => 'post',
-    'meta_key' => 'block_post_visit',
-    'orderby' => array('meta_value_num' => 'DESC')
-));
+$query = run_posts_query();
 
 while ($query->have_posts()):
     $query->the_post();

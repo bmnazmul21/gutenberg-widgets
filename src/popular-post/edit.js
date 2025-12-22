@@ -1,5 +1,5 @@
 import { useBlockProps, RichText } from '@wordpress/block-editor';
-import { useeffect, useState } from '@wordpress/element';
+import { useEffect, useState } from '@wordpress/element';
 
 
 function edit( attributes) {
@@ -10,7 +10,7 @@ function edit( attributes) {
 
     const [items, setItems ]=useState([]);
 
-    useeffect(() => {
+    useEffect(() => {
         let url = ajaxurl + '?action=popular_post_fetch';
         fetch( ajaxurl). then( response =>response.json()).then( (response)=>{
             setItems(response);
@@ -21,7 +21,6 @@ function edit( attributes) {
     return(
         <div {...blockProps}>
             <RichText tagName="h2" value={attributes.heading} onChange={onValueChange}/>
-            this is popular post block
         </div>
     )
 }

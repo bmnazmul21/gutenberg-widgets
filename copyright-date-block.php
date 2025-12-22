@@ -77,5 +77,21 @@ function save_popular_posts_meta()
 
 add_action('wp_head', 'save_popular_posts_meta');
 
+function handle_block_post_visit(){
+	run_posts_query();
+}
+
+add_action('wp_ajax_block_post_visit', 'handle_block_post_visit');
+
+function run_posts_query(){
+	return new WP_Query(array(
+		'post_type' => 'post',
+		'meta_key' => 'block_post_visit',
+		'orderby' => array('meta_value_num' => 'DESC')
+	));
+}
+
+?>
+
 
 
