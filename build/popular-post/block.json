@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ns/popular-post",
+  "title": "Custom Popular Post",
+  "category": "text",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Popular Posts"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}
