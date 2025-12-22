@@ -12,7 +12,7 @@ function edit( { attributes, setAttributes }) {
 
     useEffect(() => {
         let url = ajaxurl + '?action=popular_post_fetch';
-        fetch( ajaxurl). then( response =>response.json()).then( (response)=>{
+        fetch( url). then( response =>response.json()).then( (response)=>{
             setItems(response);
 
         });
@@ -21,6 +21,9 @@ function edit( { attributes, setAttributes }) {
     return(
         <div {...blockProps}>
             <RichText tagName="h2" value={attributes.heading} onChange={onValueChange}/>
+            {items.map(item =>(
+                <h4>{item.post_title}</h4>
+            ))}
         </div>
     )
 }
