@@ -20,7 +20,7 @@ function edit( { attributes, setAttributes }) {
 
     return(
         <div {...blockProps}>
-            <RichText tagName="h2" value={attributes.heading} onChange={onValueChange}/>
+            <RichText tagName="h2" value={attributes.heading} onChange={(value) => setAttributes({heading: value})}/>
             {items.map(item =>(
                 <h4>{item.post_title}</h4>
             ))}

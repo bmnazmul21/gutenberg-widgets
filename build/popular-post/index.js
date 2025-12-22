@@ -53,7 +53,9 @@ function edit({
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
       tagName: "h2",
       value: attributes.heading,
-      onChange: onValueChange
+      onChange: value => setAttributes({
+        heading: value
+      })
     }), items.map(item => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h4", {
       children: item.post_title
     }))]
@@ -192,7 +194,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_1__, {
-  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"]
+  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
+  save: () => null
 });
 })();
 

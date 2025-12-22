@@ -5,4 +5,5 @@ import edit from './edit';
 
 registerBlockType(metadata, {
     edit: edit,
+    save: () => null,
 });
