@@ -10,6 +10,18 @@
       "default": "Popular Posts"
     }
   },
+  "styles": [
+    {
+      "name": "grid-view",
+      "label": "Grid View",
+      "isDefault": true
+    },
+    {
+      "name": "list-view",
+      "label": "List View"
+    }
+  ],
   "editorScript": "file:./index.js",
-  "render": "file:./render.php"
+  "render": "file:./render.php",
+  "style": "file:./style.css"
 }

@@ -8,7 +8,7 @@
   \*************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ns/popular-post","title":"Custom Popular Post","category":"text","attributes":{"heading":{"type":"string","default":"Popular Posts"}},"editorScript":"file:./index.js","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ns/popular-post","title":"Custom Popular Post","category":"text","attributes":{"heading":{"type":"string","default":"Popular Posts"}},"styles":[{"name":"grid-view","label":"Grid View","isDefault":true},{"name":"list-view","label":"List View"}],"editorScript":"file:./index.js","render":"file:./render.php","style":"file:./style.css"}');
 
 /***/ },
 

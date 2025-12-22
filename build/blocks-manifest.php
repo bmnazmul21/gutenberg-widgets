@@ -51,7 +51,19 @@ return array(
 				'default' => 'Popular Posts'
 			)
 		),
+		'styles' => array(
+			array(
+				'name' => 'grid-view',
+				'label' => 'Grid View',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'list-view',
+				'label' => 'List View'
+			)
+		),
 		'editorScript' => 'file:./index.js',
-		'render' => 'file:./render.php'
+		'render' => 'file:./render.php',
+		'style' => 'file:./style.css'
 	)
 );
