@@ -2,7 +2,7 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
 import { useEffect, useState } from '@wordpress/element';
 
 
-function edit( attributes) {
+function edit( { attributes, setAttributes }) {
     const blockProps = useBlockProps();
     const onValueChange = (newValue, setAttributes ) => {
         setAttributes({heading: newValue});

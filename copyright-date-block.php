@@ -78,7 +78,9 @@ function save_popular_posts_meta()
 add_action('wp_head', 'save_popular_posts_meta');
 
 function handle_block_post_visit(){
-	run_posts_query();
+	$query = run_posts_query();
+
+	wp_send_json($query->posts);
 }
 
 add_action('wp_ajax_block_post_visit', 'handle_block_post_visit');
