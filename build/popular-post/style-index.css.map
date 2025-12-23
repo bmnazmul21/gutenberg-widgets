@@ -1,0 +1,1 @@
+{"version":3,"file":"popular-post/style-index.css","mappings":";;;AAAA;EACI;AACJ","sources":["webpack://copyright-date-block/./src/popular-post/style.scss"],"sourcesContent":[".is-style-list-view h4 {\r\n    display: list-item;\r\n}\r\n/*# sourceMappingURL=style.scss.map */"],"names":[],"ignoreList":[],"sourceRoot":""}

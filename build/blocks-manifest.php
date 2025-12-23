@@ -64,6 +64,9 @@ return array(
 		),
 		'editorScript' => 'file:./index.js',
 		'render' => 'file:./render.php',
-		'style' => 'file:./style.css'
+		'style' => 'file:./style-index.css',
+		'supports' => array(
+			'align' => true
+		)
 	)
 );

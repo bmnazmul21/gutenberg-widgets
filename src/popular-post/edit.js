@@ -1,5 +1,6 @@
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps, RichText, InspectorControls } from '@wordpress/block-editor';
 import { useEffect, useState } from '@wordpress/element';
+import { PanelBody } from '@wordpress/components';
 
 
 function edit( { attributes, setAttributes }) {
@@ -20,6 +21,12 @@ function edit( { attributes, setAttributes }) {
 
     return(
         <div {...blockProps}>
+            <InspectorControls>
+                <PanelBody title= "settings">
+                  
+                </PanelBody>
+
+            </InspectorControls>
             <RichText tagName="h2" value={attributes.heading} onChange={(value) => setAttributes({heading: value})}/>
             {items.map(item =>(
                 <h4>{item.post_title}</h4>
