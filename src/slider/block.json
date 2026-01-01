@@ -1,0 +1,53 @@
+{
+  "name": "copyright-date-block/slider",
+  "title": "Slider",
+  "description": "A slider block for displaying copyright information.",
+  "category": "widgets",
+  "icon": "image",
+  "keywords": [
+    "slider",
+    "copyright",
+    "date"
+  ],
+  "attributes": {
+    "slides": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "__experimentalLabel": {
+    "__experimentalLabel": {
+      "__experimentalLabel": {
+        "__experimentalLabel": {
+          "__experimentalLabel": {
+            "__experimentalLabel": {
+              "__experimentalLabel": {
+                "__experimentalLabel": {
+                  "__experimentalLabel": {
+                    "__experimentalLabel": {
+                      "__experimentalLabel": {
+                        "__experimentalLabel": {
+                          "__experimentalLabel": {
+                            "__experimentalLabel": {
+                              "__experimentalLabel": {
+                                "__experimentalLabel": {
+                                  "__experimentalLabel": {
+                                    "__experimentalLabel": {
+                                      "__experimentalLabel": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    
