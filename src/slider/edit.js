@@ -1,4 +1,3 @@
-j
 
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
@@ -8,4 +7,4 @@ export default function Edit( { attributes, setAttributes } ) {
 			<p>Slider Block</p>
 		</div>
 	);
-}mport { useBlockProps } from '@wordpress/block-editor';
+}import { useBlockProps } from '@wordpress/block-editor';
